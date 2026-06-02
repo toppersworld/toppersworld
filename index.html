@@ -1,386 +1,217 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToppersWorld - Premium Study Materials</title>
-    
-    <!-- FontAwesome Vector Icons -->
-    <link rel="stylesheet" href="https://cloudflare.com">
-    
-    <!-- Embedded CSS Styling -->
-    <style>
-        /* General Reset & Layout Setup */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ToppersWorld</title><style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
 
-        body {
-            background-color: #f0f7ff;
-            color: #333;
-            padding: 15px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+body{
+background:#f8fdff;
+}
 
-        :root {
-            --primary-blue: #0b63ca;
-            --accent-blue: #007bff;
-            --green-theme: #2ca12c;
-            --teal-theme: #17a2b8;
-            --dark-blue: #0a4b9b;
-        }
+header{
+background:linear-gradient(135deg,#dbeafe,#bfdbfe);
+padding:60px 20px;
+text-align:center;
+color:#2563eb;
+}
 
-        /* Top Header UI Elements */
-        .header {
-            text-align: center;
-            margin-bottom: 25px;
-            width: 100%;
-            max-width: 1000px;
-        }
+header h1{
+font-size:3rem;
+margin-bottom:10px;
+}
 
-        .logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-        }
+header p{
+font-size:1.1rem;
+}
 
-        .header-icon {
-            font-size: 3.5rem;
-            color: var(--primary-blue);
-        }
+.trust-box{
+background:white;
+border:2px solid #bbf7d0;
+color:#16a34a;
+padding:18px;
+margin:20px auto;
+max-width:900px;
+border-radius:15px;
+text-align:center;
+font-weight:bold;
+}
 
-        .logo h1 {
-            font-size: 3.5rem;
-            color: var(--primary-blue);
-            font-weight: 800;
-        }
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
 
-        .logo h1 span {
-            color: var(--accent-blue);
-        }
+.section-title{
+text-align:center;
+color:#38bdf8;
+font-size:2rem;
+margin:40px 0 20px;
+}
 
-        .subtitle {
-            font-size: 1.2rem;
-            font-weight: bold;
-            letter-spacing: 4px;
-            color: #444;
-            margin-top: 5px;
-        }
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
 
-        .trust-badge {
-            background-color: #016bf7;
-            color: white;
-            display: inline-block;
-            padding: 10px 30px;
-            border-radius: 25px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            margin: 15px 0;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
+.card{
+background:white;
+border:2px solid #e0f2fe;
+border-radius:18px;
+padding:25px;
+text-align:center;
+}
 
-        .tagline {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #555;
-        }
+.card h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
 
-        /* Info & Stats Badges */
-        .stats-container {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-            max-width: 1000px;
-            gap: 15px;
-            margin-bottom: 30px;
-        }
+.price{
+color:#22c55e;
+font-size:1.2rem;
+font-weight:bold;
+margin:15px 0;
+}
 
-        .stat-card {
-            background: white;
-            border-radius: 15px;
-            padding: 15px;
-            text-align: center;
-            flex: 1;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            border: 1px solid #e2e8f0;
-        }
+.btn{
+display:inline-block;
+padding:12px 22px;
+background:#7dd3fc;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+}
 
-        .stat-icon {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 10px;
-            font-size: 1.5rem;
-            color: white;
-        }
+.steps{
+background:white;
+border:2px solid #dbeafe;
+padding:30px;
+border-radius:18px;
+margin-top:40px;
+text-align:center;
+}
 
-        .icon-blue { background-color: #3b82f6; }
-        .icon-green { background-color: #22c55e; }
-        .icon-purple { background-color: #a855f7; }
+.steps h2{
+color:#38bdf8;
+margin-bottom:15px;
+}
 
-        .stat-card h3 {
-            font-size: 1.4rem;
-            color: #1e293b;
-        }
+.steps ol{
+display:inline-block;
+text-align:left;
+line-height:2;
+}
 
-        .stat-card p {
-            font-size: 0.9rem;
-            color: #64748b;
-        }
+.contact{
+background:#dcfce7;
+padding:25px;
+border-radius:18px;
+text-align:center;
+margin-top:40px;
+color:#16a34a;
+font-weight:bold;
+}
 
-        /* Primary Offerings Grid Matrix */
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            width: 100%;
-            max-width: 1000px;
-            margin-bottom: 30px;
-        }
+footer{
+background:#eff6ff;
+color:#2563eb;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
 
-        .card {
-            background: white;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            transition: transform 0.2s;
-            border: 2px solid transparent;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card-blue { border-color: var(--primary-blue); }
-        .card-green { border-color: var(--green-theme); }
-        .card-teal { border-color: var(--teal-theme); }
-
-        .card-header {
-            padding: 15px;
-            color: white;
-            font-weight: bold;
-            font-size: 1.1rem;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            letter-spacing: 0.5px;
-        }
-
-        .blue-bg { background-color: var(--primary-blue); }
-        .green-bg { background-color: var(--green-theme); }
-        .teal-bg { background-color: var(--teal-theme); }
-
-        .card-content {
-            padding: 20px;
-            flex-grow: 1;
-        }
-
-        .item {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 18px;
-            align-items: flex-start;
-        }
-
-        .item i {
-            font-size: 1.3rem;
-            margin-top: 3px;
-        }
-
-        .item h4 {
-            font-size: 1.05rem;
-            color: #1e293b;
-            margin-bottom: 2px;
-        }
-
-        .item p {
-            font-size: 0.88rem;
-            color: #64748b;
-            line-height: 1.4;
-        }
-
-        /* Specific Interior Layouts */
-        .center-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-        }
-
-        .big-icon {
-            font-size: 4.5rem;
-            margin-bottom: 15px;
-        }
-
-        .center-p {
-            font-size: 1rem;
-            color: #475569;
-            margin-top: 10px;
-        }
-
-        .class-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 12px;
-            background: #f8fafc;
-            padding: 8px 12px;
-            border-radius: 8px;
-        }
-
-        .class-badge {
-            background-color: var(--teal-theme);
-            color: white;
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 0.9rem;
-            flex-shrink: 0;
-        }
-
-        .class-item p {
-            font-size: 0.9rem;
-            color: #334155;
-        }
-
-        /* Interactive Call-To-Action (WhatsApp Hooks) */
-        .price-btn {
-            display: block;
-            text-align: center;
-            padding: 14px;
-            font-size: 1.4rem;
-            font-weight: bold;
-            color: white;
-            text-decoration: none;
-            margin: 15px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(44, 161, 44, 0.3);
-            transition: background 0.2s, transform 0.1s;
-        }
-
-        .price-btn:active {
-            transform: scale(0.98);
-        }
-
-        .btn-green { background-color: #24b624; }
-        .btn-green:hover { background-color: #1e9e1e; }
-
-        .small-text {
-            font-size: 0.9rem;
-            font-weight: normal;
-        }
-
-        /* Steps / User Workflow Pipeline */
-        .purchase-section {
-            width: 100%;
-            max-width: 1000px;
-            background: white;
-            border-radius: 16px;
-            padding: 20px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
-        }
-
-        .purchase-title {
-            background-color: #007bff;
-            color: white;
-            text-align: center;
-            font-weight: bold;
-            font-size: 1.3rem;
-            padding: 10px;
-            border-radius: 8px;
-            margin-bottom: 25px;
-            letter-spacing: 1px;
-        }
-
-        .steps-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .step-card {
-            flex: 1;
-            min-width: 160px;
-            text-align: center;
-            position: relative;
-            padding: 20px 10px;
-            background: #fdfdfd;
-            border: 1px dashed #cbd5e1;
-            border-radius: 12px;
-        }
-
-        .step-num {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            margin: -35px auto 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            font-size: 0.95rem;
-        }
-
-        .blue-num { background: #3b82f6; }
-        .green-num { background: #22c55e; }
-        .purple-num { background: #a855f7; }
-        .orange-num { background: #f97316; }
-        .pink-num { background: #ec4899; }
-
-        .step-card i {
-            font-size: 2rem;
-            margin-bottom: 12px;
-        }
-
-        .step-card p {
-            font-size: 0.88rem;
-            color: #475569;
-            line-height: 1.4;
-        }
-
-        .blue-text { color: #3b82f6; }
-        .green-text { color: #22c55e; }
-        .purple-text { color: #a855f7; }
-        .orange-text { color: #f97316; }
-        .pink-text { color: #ec4899; }
-
-        /* Footer & Persistent Contacts Layout */
-        .footer {
-            width: 100%;
-            max-width: 1000px;
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .whatsapp-sticky {
-            display: inline-flex;
-            align-items: center;
-            background-color: #25d366;
-            color: white;
-            padding: 12px 35px;
-            border-radius: 50px;
-            text-decoration: none;
-          
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#22c55e;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+</style></head><body><header>
+<h1>📚 ToppersWorld</h1>
+<p><b>Trusted by More Than 10,000+ Students</b></p>
+<br>
+<p>Premium Study Materials for Entrance Exams & School Education</p>
+</header><div class="trust-box">
+⭐ Trusted by 10,000+ Students | 📚 500+ Study Materials | 🏆 OAV, JNV & Sainik School Preparation
+</div><div class="container"><h2 class="section-title">🎯 Entrance Special</h2><div class="grid"><div class="card">
+<h3>OAV Entrance Preparation</h3>
+<p>Chapter-wise Notes, Mock Tests & Previous Year Questions</p>
+<p class="price">₹30 per Chapter</p>
+<a href="#" class="btn">Buy Now</a>
+</div><div class="card">
+<h3>JNV Entrance Preparation</h3>
+<p>Chapter-wise Notes, Mock Tests & Previous Year Questions</p>
+<p class="price">₹30 per Chapter</p>
+<a href="#" class="btn">Buy Now</a>
+</div><div class="card">
+<h3>Sainik School Preparation</h3>
+<p>Chapter-wise Notes, Mock Tests & Previous Year Questions</p>
+<p class="price">₹30 per Chapter</p>
+<a href="#" class="btn">Buy Now</a>
+</div></div><h2 class="section-title">📖 Advance Grammar</h2><div class="grid"><div class="card">
+<h3>English Grammar For All</h3>
+<p>Grammar Notes, Worksheets, Practice Sets & Exercises</p>
+<p class="price">₹30 per Chapter</p>
+<a href="#" class="btn">Buy Now</a>
+</div></div><h2 class="section-title">🏫 School Curriculum</h2><div class="grid"><div class="card">
+<h3>Class 5</h3>
+<p>Notes, Worksheets & Question Banks</p>
+<p class="price">₹30 per Chapter</p>
+<a href="#" class="btn">Buy Now</a>
+</div><div class="card">
+<h3>Class 6</h3>
+<p>Notes, Worksheets & Question Banks</p>
+<p class="price">₹30 per Chapter</p>
+<a href="#" class="btn">Buy Now</a>
+</div><div class="card">
+<h3>Class 7</h3>
+<p>Notes, Worksheets & Question Banks</p>
+<p class="price">₹30 per Chapter</p>
+<a href="#" class="btn">Buy Now</a>
+</div><div class="card">
+<h3>Class 8</h3>
+<p>Notes, Worksheets & Question Banks</p>
+<p class="price">₹30 per Chapter</p>
+<a href="#" class="btn">Buy Now</a>
+</div><div class="card">
+<h3>Class 9</h3>
+<p>Notes, Worksheets & Question Banks</p>
+<p class="price">₹30 per Chapter</p>
+<a href="#" class="btn">Buy Now</a>
+</div><div class="card">
+<h3>Class 10</h3>
+<p>Notes, Worksheets & Question Banks</p>
+<p class="price">₹30 per Chapter</p>
+<a href="#" class="btn">Buy Now</a>
+</div></div><div class="steps">
+<h2>How to Purchase</h2>
+<ol>
+<li>Click the Buy Now button.</li>
+<li>Complete the payment.</li>
+<li>Send your payment screenshot or transaction ID on WhatsApp.</li>
+<li>Mention your Class, Subject and Chapter Name.</li>
+<li>Receive your PDF after verification.</li>
+</ol>
+</div><div class="contact">
+<h2>Contact Us</h2>
+<p>📱 WhatsApp: +91 XXXXXXXXXX</p>
+</div></div><footer>
+© 2026 ToppersWorld. All Rights Reserved.
+</footer><a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">
+WhatsApp
+</a></body>
+</html>
