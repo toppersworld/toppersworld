@@ -2,216 +2,563 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ToppersWorld</title><style>
+<title>ToppersWorld</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet"><style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f8fdff;
+background:#ffffff;
+overflow-x:hidden;
 }
 
-header{
-background:linear-gradient(135deg,#dbeafe,#bfdbfe);
-padding:60px 20px;
+.top-ribbon{
+background:linear-gradient(90deg,#0d6efd,#2563eb);
+color:white;
 text-align:center;
-color:#2563eb;
+padding:12px;
+font-size:24px;
+font-weight:700;
 }
 
-header h1{
-font-size:3rem;
-margin-bottom:10px;
-}
-
-header p{
-font-size:1.1rem;
-}
-
-.trust-box{
+.hero{
+text-align:center;
+padding:30px 20px;
 background:white;
-border:2px solid #bbf7d0;
+}
+
+.hero h1{
+font-size:90px;
+font-weight:800;
+line-height:1;
+}
+
+.blue{
+color:#0d6efd;
+}
+
+.green{
 color:#16a34a;
-padding:18px;
-margin:20px auto;
-max-width:900px;
+}
+
+.trust-banner{
+display:inline-block;
+background:#16a34a;
+color:white;
+padding:12px 30px;
 border-radius:15px;
-text-align:center;
-font-weight:bold;
+font-size:28px;
+font-weight:700;
+margin-top:20px;
 }
 
-.container{
+.subtitle{
+font-size:32px;
+font-weight:700;
+margin-top:20px;
+color:#111827;
+}
+
+.stats{
 max-width:1200px;
-margin:auto;
-padding:20px;
-}
-
-.section-title{
-text-align:center;
-color:#38bdf8;
-font-size:2rem;
-margin:40px 0 20px;
-}
-
-.grid{
+margin:30px auto;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:repeat(3,1fr);
 gap:20px;
+padding:0 20px;
+}
+
+.stat-box{
+background:white;
+border:2px solid #dbeafe;
+border-radius:20px;
+padding:25px;
+text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.stat-number{
+font-size:52px;
+font-weight:800;
+}
+
+.blue-text{
+color:#0d6efd;
+}
+
+.green-text{
+color:#16a34a;
+}
+
+.orange-text{
+color:#f97316;
+}
+
+.stat-label{
+font-size:24px;
+font-weight:700;
+}
+
+.section-banner{
+max-width:800px;
+margin:40px auto;
+background:#0d6efd;
+color:white;
+text-align:center;
+padding:15px;
+border-radius:20px;
+font-size:42px;
+font-weight:800;
+}
+
+.cards{
+max-width:1300px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+padding:20px;
 }
 
 .card{
 background:white;
-border:2px solid #e0f2fe;
-border-radius:18px;
+border-radius:25px;
 padding:25px;
 text-align:center;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+border:2px solid #dbeafe;
 }
 
 .card h3{
-color:#38bdf8;
+font-size:52px;
+font-weight:800;
 margin-bottom:10px;
 }
 
-.price{
-color:#22c55e;
-font-size:1.2rem;
-font-weight:bold;
-margin:15px 0;
+.card p{
+font-size:24px;
+line-height:1.5;
 }
 
-.btn{
-display:inline-block;
-padding:12px 22px;
-background:#7dd3fc;
-color:white;
-text-decoration:none;
-border-radius:10px;
-font-weight:bold;
-}
-
-.steps{
-background:white;
-border:2px solid #dbeafe;
-padding:30px;
-border-radius:18px;
-margin-top:40px;
-text-align:center;
-}
-
-.steps h2{
-color:#38bdf8;
-margin-bottom:15px;
-}
-
-.steps ol{
-display:inline-block;
-text-align:left;
-line-height:2;
-}
-
-.contact{
-background:#dcfce7;
-padding:25px;
-border-radius:18px;
-text-align:center;
-margin-top:40px;
+.check{
 color:#16a34a;
-font-weight:bold;
+font-weight:700;
 }
 
-footer{
-background:#eff6ff;
+.price{
+background:#16a34a;
+color:white;
+padding:10px 20px;
+border-radius:12px;
+display:inline-block;
+margin:20px 0;
+font-size:30px;
+font-weight:800;
+}
+
+.buy-btn{
+display:inline-block;
+background:#16a34a;
+color:white;
+padding:14px 30px;
+border-radius:14px;
+text-decoration:none;
+font-size:24px;
+font-weight:700;
+}
+
+.buy-btn:hover{
+transform:scale(1.05);
+}
+
+.curriculum{
+max-width:1400px;
+margin:auto;
+padding:20px;
+}
+
+.curriculum-grid{
+display:grid;
+grid-template-columns:repeat(6,1fr);
+gap:15px;
+}
+
+.class-card{
+background:white;
+border-radius:20px;
+padding:20px;
+text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.class-card h4{
+font-size:22px;
+}
+
+.class-card .class-no{
+font-size:60px;
+font-weight:800;
+}
+
+.orange{border:3px solid #f59e0b;}
+.green-border{border:3px solid #16a34a;}
+.pink{border:3px solid #ec4899;}
+.blue-border{border:3px solid #2563eb;}
+.purple{border:3px solid #9333ea;}
+.teal{border:3px solid #14b8a6;}
+
+.class-desc{
+font-size:16px;
+margin:15px 0;
+font-weight:600;
+}
+
+.class-price{
+background:#16a34a;
+color:white;
+padding:8px;
+border-radius:10px;
+font-size:22px;
+font-weight:700;
+margin:10px 0;
+}
+
+.class-btn{
+display:inline-block;
+background:#16a34a;
+color:white;
+padding:10px 18px;
+border-radius:10px;
+text-decoration:none;
+font-weight:700;
+}
+
+</style></head>
+<body><div class="top-ribbon">
+⭐ YOUR SUCCESS, OUR MISSION ⭐
+</div><section class="hero"><h1>
+<span class="blue">Toppers</span>
+<span class="green">World</span>
+</h1><div class="trust-banner">
+🛡 Trusted by More Than 10,000+ Students
+</div><div class="subtitle">
+Premium Study Materials for OAV, JNV, Sainik School & Classes 5–10
+</div></section><section class="stats"><div class="stat-box">
+<div class="stat-number blue-text">10,000+</div>
+<div class="stat-label">Students</div>
+</div><div class="stat-box">
+<div class="stat-number green-text">500+</div>
+<div class="stat-label">Study Materials</div>
+</div><div class="stat-box">
+<div class="stat-number orange-text">Entrance</div>
+<div class="stat-label">Experts</div>
+</div></section><div class="section-banner">
+🎯 ENTRANCE SPECIAL
+</div><section class="cards"><div class="card">
+<h3 class="blue-text">OAV</h3>
+<p>Entrance Preparation</p><p class="check">✔ Notes, Mock Tests & Previous Year Questions</p><div class="price">₹30 / Chapter</div><a href="https://wa.me/918280072728?text=Hello%20ToppersWorld,%20I%20want%20to%20purchase%20an%20OAV%20PDF.%0AClass:%20%0ASubject:%20%0AChapter:%20" class="buy-btn">
+Buy Now on WhatsApp
+</a>
+</div><div class="card">
+<h3 class="green-text">JNV</h3>
+<p>Entrance Preparation</p><p class="check">✔ Notes, Mock Tests & Previous Year Questions</p><div class="price">₹30 / Chapter</div><a href="https://wa.me/918280072728?text=Hello%20ToppersWorld,%20I%20want%20to%20purchase%20a%20JNV%20PDF.%0AClass:%20%0ASubject:%20%0AChapter:%20" class="buy-btn">
+Buy Now on WhatsApp
+</a>
+</div><div class="card">
+<h3 class="orange-text">SAINIK SCHOOL</h3>
+<p>Entrance Preparation</p><p class="check">✔ Notes, Mock Tests & Previous Year Questions</p><div class="price">₹30 / Chapter</div><a href="https://wa.me/918280072728?text=Hello%20ToppersWorld,%20I%20want%20to%20purchase%20a%20Sainik%20School%20PDF.%0AClass:%20%0ASubject:%20%0AChapter:%20" class="buy-btn">
+Buy Now on WhatsApp
+</a>
+</div></section>
+<div class="section-banner">
+🏫 SCHOOL CURRICULUM (CLASSES 5–10)
+</div><section class="curriculum"><div class="curriculum-grid"><div class="class-card orange">
+<h4>CLASS</h4>
+<div class="class-no" style="color:#f59e0b;">5</div>
+<div class="class-desc">
+Chapter-wise Notes, Worksheets, Question Banks with Answers
+</div>
+<div class="class-price">₹30 / Chapter</div>
+<a href="https://wa.me/918280072728?text=Hello%20ToppersWorld,%20I%20want%20to%20purchase%20a%20Class%205%20PDF.%0ASubject:%20%0AChapter:%20" class="class-btn">Buy Now</a>
+</div><div class="class-card green-border">
+<h4>CLASS</h4>
+<div class="class-no" style="color:#16a34a;">6</div>
+<div class="class-desc">
+Chapter-wise Notes, Worksheets, Question Banks with Answers
+</div>
+<div class="class-price">₹30 / Chapter</div>
+<a href="https://wa.me/918280072728?text=Hello%20ToppersWorld,%20I%20want%20to%20purchase%20a%20Class%206%20PDF.%0ASubject:%20%0AChapter:%20" class="class-btn">Buy Now</a>
+</div><div class="class-card pink">
+<h4>CLASS</h4>
+<div class="class-no" style="color:#ec4899;">7</div>
+<div class="class-desc">
+Chapter-wise Notes, Worksheets, Question Banks with Answers
+</div>
+<div class="class-price">₹30 / Chapter</div>
+<a href="https://wa.me/918280072728?text=Hello%20ToppersWorld,%20I%20want%20to%20purchase%20a%20Class%207%20PDF.%0ASubject:%20%0AChapter:%20" class="class-btn">Buy Now</a>
+</div><div class="class-card blue-border">
+<h4>CLASS</h4>
+<div class="class-no" style="color:#2563eb;">8</div>
+<div class="class-desc">
+Chapter-wise Notes, Worksheets, Question Banks with Answers
+</div>
+<div class="class-price">₹30 / Chapter</div>
+<a href="https://wa.me/918280072728?text=Hello%20ToppersWorld,%20I%20want%20to%20purchase%20a%20Class%208%20PDF.%0ASubject:%20%0AChapter:%20" class="class-btn">Buy Now</a>
+</div><div class="class-card purple">
+<h4>CLASS</h4>
+<div class="class-no" style="color:#9333ea;">9</div>
+<div class="class-desc">
+Chapter-wise Notes, Worksheets, Question Banks with Answers
+</div>
+<div class="class-price">₹30 / Chapter</div>
+<a href="https://wa.me/918280072728?text=Hello%20ToppersWorld,%20I%20want%20to%20purchase%20a%20Class%209%20PDF.%0ASubject:%20%0AChapter:%20" class="class-btn">Buy Now</a>
+</div><div class="class-card teal">
+<h4>CLASS</h4>
+<div class="class-no" style="color:#14b8a6;">10</div>
+<div class="class-desc">
+Chapter-wise Notes, Worksheets, Question Banks with Answers
+</div>
+<div class="class-price">₹30 / Chapter</div>
+<a href="https://wa.me/918280072728?text=Hello%20ToppersWorld,%20I%20want%20to%20purchase%20a%20Class%2010%20PDF.%0ASubject:%20%0AChapter:%20" class="class-btn">Buy Now</a>
+</div></div></section><div class="section-banner" style="background:#7c3aed;">
+📚 ADVANCE GRAMMAR & CURRENT AFFAIRS
+</div><section style="max-width:1300px;margin:auto;padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:20px;"><div class="card" style="border:2px solid #c084fc;">
+<h3 style="color:#7c3aed;">ADVANCE GRAMMAR</h3>
+<p>English Grammar For All</p><p>
+Grammar Notes, Worksheets, Exercises & Practice Sets
+</p><div class="price" style="background:#7c3aed;">
+₹30 / Chapter
+</div><a href="https://wa.me/918280072728?text=Hello%20ToppersWorld,%20I%20want%20to%20purchase%20an%20English%20Grammar%20PDF.%0AChapter:%20" class="buy-btn">
+Buy Now on WhatsApp
+</a></div><div class="card" style="border:2px solid #06b6d4;">
+<h3 style="color:#06b6d4;">CURRENT AFFAIRS</h3><p>
+Monthly Current Affairs, GK Updates, Quiz Sets & Practice Materials
+</p><p>
+Useful for OAV, JNV, Sainik School and School Competitions
+</p><div class="price" style="background:#06b6d4;">
+₹30 / Chapter
+</div><a href="https://wa.me/918280072728?text=Hello%20ToppersWorld,%20I%20want%20to%20purchase%20Current%20Affairs%20Material." class="buy-btn">
+Buy Now on WhatsApp
+</a></div></section>
+<style>
+
+.purchase-support{
+max-width:1300px;
+margin:30px auto;
+padding:20px;
+display:grid;
+grid-template-columns:1.5fr 1fr;
+gap:20px;
+}
+
+.purchase-box{
+background:white;
+border:2px solid #60a5fa;
+border-radius:20px;
+padding:25px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.purchase-title{
+background:#2563eb;
+color:white;
+padding:12px 20px;
+border-radius:15px;
+display:inline-block;
+font-size:32px;
+font-weight:800;
+margin-bottom:25px;
+}
+
+.steps-grid{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:15px;
+text-align:center;
+}
+
+.step{
+padding:10px;
+}
+
+.step-circle{
+width:70px;
+height:70px;
+margin:auto;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:32px;
+font-weight:800;
+color:white;
+}
+
+.blue-bg{background:#2563eb;}
+.green-bg{background:#16a34a;}
+.orange-bg{background:#f97316;}
+.pink-bg{background:#ec4899;}
+.purple-bg{background:#9333ea;}
+
+.step p{
+margin-top:12px;
+font-size:16px;
+font-weight:600;
+}
+
+.support-box{
+background:#f0fdf4;
+border:2px solid #22c55e;
+border-radius:20px;
+padding:25px;
+text-align:center;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.support-title{
+background:#16a34a;
+color:white;
+padding:12px 20px;
+border-radius:12px;
+display:inline-block;
+font-size:28px;
+font-weight:800;
+}
+
+.phone{
+font-size:52px;
+font-weight:800;
+color:#15803d;
+margin:25px 0;
+word-break:break-word;
+}
+
+.help-text{
+font-size:24px;
+font-weight:700;
+color:#166534;
+}
+
+.footer-features{
+margin-top:40px;
+background:white;
+border-top:2px solid #dbeafe;
+padding:30px 20px;
+}
+
+.footer-grid{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+text-align:center;
+}
+
+.footer-item{
+font-size:30px;
+font-weight:800;
 color:#2563eb;
+}
+
+.copyright{
 text-align:center;
 padding:20px;
-margin-top:40px;
+font-size:18px;
+font-weight:600;
+color:#64748b;
 }
 
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#22c55e;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
+@media(max-width:1000px){
+
+.hero h1{
+font-size:60px;
 }
-</style></head><body><header>
-<h1>📚 ToppersWorld</h1>
-<p><b>Trusted by More Than 10,000+ Students</b></p>
-<br>
-<p>Premium Study Materials for Entrance Exams & School Education</p>
-</header><div class="trust-box">
-⭐ Trusted by 10,000+ Students | 📚 500+ Study Materials | 🏆 OAV, JNV & Sainik School Preparation
-</div><div class="container"><h2 class="section-title">🎯 Entrance Special</h2><div class="grid"><div class="card">
-<h3>OAV Entrance Preparation</h3>
-<p>Chapter-wise Notes, Mock Tests & Previous Year Questions</p>
-<p class="price">₹30 per Chapter</p>
-<a href="#" class="btn">Buy Now</a>
-</div><div class="card">
-<h3>JNV Entrance Preparation</h3>
-<p>Chapter-wise Notes, Mock Tests & Previous Year Questions</p>
-<p class="price">₹30 per Chapter</p>
-<a href="#" class="btn">Buy Now</a>
-</div><div class="card">
-<h3>Sainik School Preparation</h3>
-<p>Chapter-wise Notes, Mock Tests & Previous Year Questions</p>
-<p class="price">₹30 per Chapter</p>
-<a href="#" class="btn">Buy Now</a>
-</div></div><h2 class="section-title">📖 Advance Grammar</h2><div class="grid"><div class="card">
-<h3>English Grammar For All</h3>
-<p>Grammar Notes, Worksheets, Practice Sets & Exercises</p>
-<p class="price">₹30 per Chapter</p>
-<a href="#" class="btn">Buy Now</a>
-</div></div><h2 class="section-title">🏫 School Curriculum</h2><div class="grid"><div class="card">
-<h3>Class 5</h3>
-<p>Notes, Worksheets & Question Banks</p>
-<p class="price">₹30 per Chapter</p>
-<a href="#" class="btn">Buy Now</a>
-</div><div class="card">
-<h3>Class 6</h3>
-<p>Notes, Worksheets & Question Banks</p>
-<p class="price">₹30 per Chapter</p>
-<a href="#" class="btn">Buy Now</a>
-</div><div class="card">
-<h3>Class 7</h3>
-<p>Notes, Worksheets & Question Banks</p>
-<p class="price">₹30 per Chapter</p>
-<a href="#" class="btn">Buy Now</a>
-</div><div class="card">
-<h3>Class 8</h3>
-<p>Notes, Worksheets & Question Banks</p>
-<p class="price">₹30 per Chapter</p>
-<a href="#" class="btn">Buy Now</a>
-</div><div class="card">
-<h3>Class 9</h3>
-<p>Notes, Worksheets & Question Banks</p>
-<p class="price">₹30 per Chapter</p>
-<a href="#" class="btn">Buy Now</a>
-</div><div class="card">
-<h3>Class 10</h3>
-<p>Notes, Worksheets & Question Banks</p>
-<p class="price">₹30 per Chapter</p>
-<a href="#" class="btn">Buy Now</a>
-</div></div><div class="steps">
-<h2>How to Purchase</h2>
-<ol>
-<li>Click the Buy Now button.</li>
-<li>Complete the payment.</li>
-<li>Send your payment screenshot or transaction ID on WhatsApp.</li>
-<li>Mention your Class, Subject and Chapter Name.</li>
-<li>Receive your PDF after verification.</li>
-</ol>
-</div><div class="contact">
-<h2>Contact Us</h2>
-<p>📱 WhatsApp: +91 XXXXXXXXXX</p>
-</div></div><footer>
-© 2026 ToppersWorld. All Rights Reserved.
-</footer><a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">
-WhatsApp
-</a></body>
+
+.stats{
+grid-template-columns:1fr;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.curriculum-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.purchase-support{
+grid-template-columns:1fr;
+}
+
+.steps-grid{
+grid-template-columns:1fr;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+.phone{
+font-size:40px;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero h1{
+font-size:48px;
+}
+
+.subtitle{
+font-size:22px;
+}
+
+.section-banner{
+font-size:28px;
+}
+
+.curriculum-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style><section class="purchase-support"><div class="purchase-box"><div class="purchase-title">
+🛒 HOW TO PURCHASE
+</div><div class="steps-grid"><div class="step">
+<div class="step-circle blue-bg">1</div>
+<p>Click Buy Now Button</p>
+</div><div class="step">
+<div class="step-circle green-bg">2</div>
+<p>Send Class, Subject & Chapter Name</p>
+</div><div class="step">
+<div class="step-circle orange-bg">3</div>
+<p>Make Payment Through UPI / WhatsApp Pay</p>
+</div><div class="step">
+<div class="step-circle pink-bg">4</div>
+<p>Send Payment Screenshot</p>
+</div><div class="step">
+<div class="step-circle purple-bg">5</div>
+<p>Receive PDF on WhatsApp</p>
+</div></div></div><div class="support-box"><div class="support-title">
+📱 WHATSAPP SUPPORT
+</div><div class="phone">
+8280072728
+</div><div class="help-text">
+We are here to help you! 💚
+</div></div></section><footer class="footer-features"><div class="footer-grid"><div class="footer-item">
+🛡 QUALITY CONTENT
+</div><div class="footer-item">
+🎯 EXPERT GUIDANCE
+</div><div class="footer-item">
+🏆 YOUR SUCCESS, OUR MISSION
+</div></div></footer><div class="copyright">
+© 2026 ToppersWorld | Trusted by More Than 10,000+ Students
+</div></body>
 </html>
